@@ -52,8 +52,8 @@ st.sidebar.subheader("🚨 급등 탐지 조건 (24H 기준)")
 surge_price = st.sidebar.number_input("가격 상승률 기준 (%)", value=5.0, step=1.0)
 
 # 네이버 뉴스 API KEY
-CLIENT_ID = os.getenv("NAVER_CLIENT_ID")
-CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET")
+CLIENT_ID = st.secrets["NAVER_CLIENT_ID"]
+CLIENT_SECRET = st.secrets["NAVER_CLIENT_SECRET"]
 # -----------------------------
 # 3. 데이터 로딩 및 지표 계산
 # -----------------------------
